@@ -12,7 +12,7 @@
     position: absolute;
 }
 
-@for $i from 1 through 10 {
+@for $i from 1 through 20 {
     @keyframes circle-move-#{$i} {
         50% {
             opacity: 1
@@ -30,8 +30,8 @@
         $size: (random(5) + 5 ) * 2 + px;
         height: $size;
         width: $size;
-        background: hsl(random(360), 70%, 50%);
-        animation-delay: -$i * .5s;
+        background: hsl(random(360), 90%, 50%);
+        animation-delay: $i * .8s;
         transform: translate3d((random(80) * 1vw), (random(80)*1vh), (random(40)*1px));
     }
 }

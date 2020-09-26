@@ -30,14 +30,13 @@
         <div class="circle"></div>
     </div>
     <section class="interactiveSite">
-
-    
         <header>
             <h1>LISTA ZADAŃ</h1>
-            <h2>wybierz zadanie z listy lub wpisz je samodzielnie</h2>   
+            <h2>zapisz swoje zadanie lub wybierz któreś z listy</h2>   
         </header>
         <section class="choosingTask">
             <div class="chooseWisely">
+                <input id="taskInput" placeholder="wpisz zadanie">
                 <select name="selectTasks" id="selectTasks">
                     <option value="" class="selectValue">wybierz z listy</option>
                     <option value="ostrugać ołówek" class="selectValue">ostrugać ołówek</option>
@@ -52,7 +51,7 @@
                     <option value="zaśpiewać psu" class="selectValue">zaśpiewać psu</option>
                     <option value="wstąpić do osp" class="selectValue">wstąpić do osp</option>
                 </select>
-                <input id="taskInput" placeholder="wpisz zadanie">
+                
             </div>
             
             <button id="addTaskButton">dodaj misję</button>
@@ -60,8 +59,10 @@
 
         <section class="bothLists">
             <ul id="taskList">
+                <h3>do zrobienia:</h3>
             </ul>
             <ul id="finishedList">
+                <h3>zrobione</h3>
             </ul>
         </section>
 

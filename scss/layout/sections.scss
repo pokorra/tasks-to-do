@@ -1,33 +1,77 @@
-// first section with choosing and defining tasks
+//setting both section similar
+section {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.choosingTask {
+// first section with choosing and defining tasks
+.choosingTask,
+.bothLists {
     width: 90%;
     border: 1px dotted fuchsia;
+    margin: 10px auto;
 }
 
 .chooseWisely {
     display: flex;
 }
 
-.checkbox {
-    margin: 20px;
-    size: 20px;
+#selectTasks,
+#taskInput {
+    padding: 5px;
+    margin-right: 10px;
+    width: 50%;
 }
+
 
 // second section with displayed lists of tasks
 .bothLists {
-    width: 90%;
-    margin: 10px auto;
     display: flex;
-    justify-content: flex-start;
-    border: 1px dotted pink;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 40%;
+}
+
+#taskList,
+#finishedList {
+    width: 40%;
 }
 
 /* taskcontainer */
 .taskcontainer {
-    border: 2px double black;
+    border: 1px dotted black;
+    margin-top: 3px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
-    width: 20vw;
-    background-color: fuchsia;
+    width: 100%;
+    background-color: rgba(255, 0, 255, .7);
+}
+
+.checkbox {
+    margin: 0 10px;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+#removeFinishedTasksButton {
+    align-self: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .chooseWisely {
+        display: block;
+        #selectTasks,
+        #taskInput {
+            width: 100%;
+        }
+        #taskInput {
+            margin-bottom: 10px;
+        }
+    }
 }
