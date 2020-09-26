@@ -1,0 +1,33 @@
+// first section with choosing and defining tasks
+
+.choosingTask {
+    width: 90%;
+    border: 1px dotted fuchsia;
+}
+
+.chooseWisely {
+    display: flex;
+}
+
+.checkbox {
+    margin: 20px;
+    size: 20px;
+}
+
+// second section with displayed lists of tasks
+.bothLists {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px dotted pink;
+}
+
+/* taskcontainer */
+.taskcontainer {
+    border: 2px double black;
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    background-color: fuchsia;
+}

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>lista zadań</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="wrapper">
@@ -19,44 +18,55 @@
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
     </div>
-<header>
-    <h1>LISTA ZADAŃ</h1>
-    <h2>wybierz zadanie z listy lub wpisz je samodzielnie</h2>
+    <section class="interactiveSite">
+
     
-</header>
-<section class="choosingTask">
-    <div class="chooseWisely">
-        <select name="selectTasks" id="selectTasks">
-            <option value="" class="selectValue">wybierz z listy</option>
-            <option value="ostrugać ołówek" class="selectValue">ostrugać ołówek</option>
-            <option value="zagonić gęsi" class="selectValue">zagonić gęsi</option>
-            <option value="zjeść" class="selectValue">zjeść</option>
-            <option value="wysłać cv" class="selectValue">wysłać cv</option>
-            <option value="złapać bandytę" class="selectValue">złapać bandytę</option>
-            <option value="kupić rajstopy" class="selectValue">kupić rajstopy</option>
-            <option value="skosić trawę" class="selectValue">skosić trawę</option>
-            <option value="opłacić prąd" class="selectValue">opłacić prąd</option>
-            <option value="oddzielić ziarna od plew" class="selectValue">oddzielić ziarna od plew</option>
-            <option value="zaśpiewać psu" class="selectValue">zaśpiewać psu</option>
-            <option value="wstąpić do osp" class="selectValue">wstąpić do osp</option>
-        </select>
-        <input id="taskInput" placeholder="wpisz zadanie">
-    </div>
-    
-    <button id="addTaskButton">dodaj misję</button>
-</section>
+        <header>
+            <h1>LISTA ZADAŃ</h1>
+            <h2>wybierz zadanie z listy lub wpisz je samodzielnie</h2>   
+        </header>
+        <section class="choosingTask">
+            <div class="chooseWisely">
+                <select name="selectTasks" id="selectTasks">
+                    <option value="" class="selectValue">wybierz z listy</option>
+                    <option value="ostrugać ołówek" class="selectValue">ostrugać ołówek</option>
+                    <option value="zagonić gęsi" class="selectValue">zagonić gęsi</option>
+                    <option value="zjeść" class="selectValue">zjeść</option>
+                    <option value="wysłać cv" class="selectValue">wysłać cv</option>
+                    <option value="złapać bandytę" class="selectValue">złapać bandytę</option>
+                    <option value="kupić rajstopy" class="selectValue">kupić rajstopy</option>
+                    <option value="skosić trawę" class="selectValue">skosić trawę</option>
+                    <option value="opłacić prąd" class="selectValue">opłacić prąd</option>
+                    <option value="oddzielić ziarna od plew" class="selectValue">oddzielić ziarna od plew</option>
+                    <option value="zaśpiewać psu" class="selectValue">zaśpiewać psu</option>
+                    <option value="wstąpić do osp" class="selectValue">wstąpić do osp</option>
+                </select>
+                <input id="taskInput" placeholder="wpisz zadanie">
+            </div>
+            
+            <button id="addTaskButton">dodaj misję</button>
+        </section>
 
-<section class="bothLists">
-    <ul id="taskList">
-    </ul>
-    <ul id="finishedList">
-    </ul>
-</section>
+        <section class="bothLists">
+            <ul id="taskList">
+            </ul>
+            <ul id="finishedList">
+            </ul>
+        </section>
 
-
-<button id="removeFinishedTasksButton">wyczyść wykonane zadania</button>
-
+        <button id="removeFinishedTasksButton">wyczyść wykonane zadania</button>
+    </section>
 <script src="./js/app.js"></script>
 </body>
 </html>
