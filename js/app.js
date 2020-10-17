@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     selectTasks.addEventListener('change', (event) => {
         selectedTask = event.target.value;
-        console.log(selectedTask);
     });
 
     function addTask(){
@@ -42,11 +41,16 @@ document.addEventListener('DOMContentLoaded', function(){
                 taskList.removeChild(taskContainer);
                 doneList.appendChild(taskContainer);
             })
-            resetButton.addEventListener('click', function(){
-                doneList.innerHTML = '';
-            })   
+            
     };
     butTask.addEventListener('click', addTask);
+
+    resetButton.addEventListener('click', function(){
+        doneList.innerHTML = '';
+        const doneH3 = document.createElement('h3');
+        doneH3.innerHTML = 'zrobione:';
+        doneList.appendChild(doneH3);
+    });
 
 })
 
